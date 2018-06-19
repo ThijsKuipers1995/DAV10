@@ -9,7 +9,7 @@ body {
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: blue;
+    background-color: navy;
     overflow-x: hidden;
     padding-top: 20px;
 }
@@ -26,26 +26,32 @@ body {
     background-color: lightblue;
 }
 header {
-	border-bottom: 5px solid grey;
-	margin-left: 100px;
-	width: calc(100% - 100px);
+	border-bottom: 3px solid grey;
+	margin-left: 120px;
+	margin-right: 20px;
+	width: calc(100% - 140px);
 	height:60px;
 }
 
 main {
-    margin-left: 100px;
+    margin-left: 120px;
+    margin-right: 20px;
 }
 footer {
-	border-top: 5px solid grey;
-	margin-left: 100px;
-   	position:absolute;
+	border-top: 3px solid grey;
+	margin-left: 120px;
+	margin-right: 20px;
+   	position:relative;
    	bottom:0;
-   	width: calc(100% - 100px);
+   	width: calc(100% - 140px);
    	height:60px;   /* Height of the footer */
 }
-}
-
 h1 {
-    color: navy;
     margin: 0;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
 }
