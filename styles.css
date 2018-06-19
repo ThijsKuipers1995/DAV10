@@ -22,9 +22,6 @@ body {
     display: block;
 }
 
-.sidenavtext:hover {
-    background-color: lightblue;
-}
 header {
 	border-bottom: 3px solid grey;
 	margin-left: 120px;
