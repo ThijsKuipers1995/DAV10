@@ -1,0 +1,54 @@
+body {
+	background-color: white;
+	margin: 0;
+}
+.sidenav {
+    height: 100%;
+    width: 100px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: navy;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 20px 20px 20px 20px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    display: block;
+}
+
+header {
+	border-bottom: 3px solid grey;
+	margin-left: 120px;
+	margin-right: 20px;
+	width: calc(100% - 140px);
+	height:60px;
+}
+
+main {
+    margin-left: 120px;
+    margin-right: 20px;
+}
+footer {
+	border-top: 3px solid grey;
+	margin-left: 120px;
+	margin-right: 20px;
+   	position:relative;
+   	bottom:0;
+   	width: calc(100% - 140px);
+   	height:60px;   /* Height of the footer */
+}
+h1 {
+    margin: 0;
+}
+.alignleft {
+	float: left;
+}
+.alignright {
+	float: right;
+}
