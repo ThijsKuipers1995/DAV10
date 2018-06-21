@@ -1,7 +1,7 @@
 var simplemaps_worldmap_mapdata={
   main_settings: {
    //General settings
-    width: "700", //'700' or 'responsive'
+    width: "1000", //'700' or 'responsive'
     background_color: "#FFFFFF",
     background_transparent: "yes",
     popups: "detect",
@@ -33,7 +33,7 @@ var simplemaps_worldmap_mapdata={
     //Label defaults
     label_color: "#ffffff",
     label_hover_color: "#ffffff",
-    label_size: 22,
+    label_size: 10,
     label_font: "Arial",
     hide_labels: "no",
     hide_eastern_labels: false,
@@ -59,6 +59,7 @@ var simplemaps_worldmap_mapdata={
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
+    popup_orientation: "below",
     
     //Advanced settings
     div: "map",
@@ -76,6 +77,8 @@ var simplemaps_worldmap_mapdata={
   state_specific: {
     AE: {
       name: "United Arab Emirates",
+      color: "grey",
+      hover_color: "grey",
       inactive: "no",
       hide: "no"
     },
