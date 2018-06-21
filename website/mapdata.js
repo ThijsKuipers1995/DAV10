@@ -77,6 +77,7 @@ var simplemaps_worldmap_mapdata={
   state_specific: {
     AE: {
       name: "United Arab Emirates",
+      description: "No data available",
       color: "grey",
       hover_color: "grey",
       inactive: "no",
@@ -149,6 +150,7 @@ var simplemaps_worldmap_mapdata={
     },
     BH: {
       name: "Bahrain",
+      description: "No data available",
       hide: "no",
       inactive: "no"
     },
@@ -466,6 +468,7 @@ var simplemaps_worldmap_mapdata={
       name: "Israel",
       hover_color: "grey",
       hide: "no",
+      description: "No data available",
       color: "grey",
       inactive: "no"
     },
@@ -502,6 +505,7 @@ var simplemaps_worldmap_mapdata={
     JO: {
       name: "Jordan",
       hide: "no",
+      description: "No data available",
       hover_color: "grey",
       inactive: "no",
       color: "grey"
@@ -539,6 +543,7 @@ var simplemaps_worldmap_mapdata={
     KW: {
       name: "Kuwait",
       hover_color: "grey",
+      description: "No data available",
       color: "grey",
       hide: "no",
       inactive: "no"
@@ -701,6 +706,7 @@ var simplemaps_worldmap_mapdata={
     OM: {
       name: "Oman",
       hide: "no",
+      description: "No data available",
       color: "grey",
       hover_color: "grey",
       inactive: "no"
@@ -757,6 +763,7 @@ var simplemaps_worldmap_mapdata={
     },
     QA: {
       name: "Qatar",
+      description: "No data available",
       hide: "no",
       hover_color: "grey",
       color: "grey",
@@ -784,6 +791,7 @@ var simplemaps_worldmap_mapdata={
     },
     SA: {
       name: "Saudi Arabia",
+      description: "No data available",
       hide: "no",
       color: "grey",
       hover_color: "grey",

@@ -6,22 +6,26 @@ body {
     height: 100%;
     width: 100px;
     position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    text-align: center;
     background-color: navy;
-    overflow-x: hidden;
-    padding-top: 20px;
+    color: white;
+    font-size: 36px;
+    opacity: 1;
 }
 
 .sidenav a {
-    padding: 20px 20px 20px 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
     text-decoration: none;
     font-size: 20px;
     color: white;
     display: block;
 }
 
+.sidenav a:hover {
+    background-color: darkgrey;
+    opacity: 0.8;
+}
 header {
 	border-bottom: 3px solid grey;
 	margin-left: 120px;
@@ -31,8 +35,7 @@ header {
 }
 
 main {
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 120px;
 }
 footer {
 	border-top: 3px solid grey;
@@ -45,6 +48,10 @@ footer {
 }
 h1 {
     margin: 0;
+    font-family: Tahoma, Geneva, sans-serif;
+}
+a {
+    font-family: Tahoma, Geneva, sans-serif;
 }
 .alignleft {
 	float: left;
@@ -66,7 +73,6 @@ h1 {
     overflow: scroll;
 }
 .inner {
-
   margin: 0 auto;
   margin-top: 100px;
 }
