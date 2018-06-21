@@ -86,7 +86,8 @@ var simplemaps_worldmap_mapdata={
     AF: {
       name: "Afghanistan",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Afghanistan')"
     },
     AL: {
       name: "Albania",
@@ -480,12 +481,14 @@ var simplemaps_worldmap_mapdata={
     IQ: {
       name: "Iraq",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Iraq')"
     },
     IR: {
       name: "Iran",
       hide: "no",
       inactive: "no",
+      url: "javascript:showGraphs('Iran')"
     },
     IS: {
       name: "Iceland",
@@ -734,7 +737,8 @@ var simplemaps_worldmap_mapdata={
     PK: {
       name: "Pakistan",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Pakistan')"
     },
     PL: {
       name: "Poland",
@@ -749,7 +753,8 @@ var simplemaps_worldmap_mapdata={
     PS: {
       name: "Palestine",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Palestine')"
     },
     PT: {
       name: "Portugal",
@@ -855,7 +860,8 @@ var simplemaps_worldmap_mapdata={
     SY: {
       name: "Syria",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Syria')"
     },
     SZ: {
       name: "Swaziland",
@@ -960,7 +966,14 @@ var simplemaps_worldmap_mapdata={
     YE: {
       name: "Yemen",
       hide: "no",
-      inactive: "no"
+      inactive: "no",
+      url: "javascript:showGraphs('Yemen')"
+    },
+    LB: {
+      name: "Lebanon",
+      hide: "no",
+      inactive: "no",
+      url: "javascript:showGraphs('Lebanon')"
     },
     ZA: {
       name: "South Africa",
