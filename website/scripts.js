@@ -23,6 +23,33 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+var info = document.getElementById("Info");
+var graphs = document.getElementById("Graphs");
+var conflicts = document.getElementById("Conflict");
+
+function showInfo() {
+	modal.style.display = "none";
+
+    info.style.display= "block";
+	conflicts.style.display = "none";
+    graphs.style.display = "none";
+}
+
+function showAllGraphs() {
+	modal.style.display = "none";
+
+	info.style.display= "none";
+	conflicts.style.display = "none";
+	graphs.style.display = "block";
+}
+
+function showConflicts() {
+	modal.style.display = "none";
+
+	info.style.display= "none";
+	conflicts.style.display = "block";
+	graphs.style.display = "none";
+}
 
 function showGraphs(country) {
 	modal.style.display = "none";
