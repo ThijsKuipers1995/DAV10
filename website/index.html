@@ -1,0 +1,51 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Data Analysis and Visualisation</title>
+  <script src="jquery.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />     
+  <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+  <script type="text/javascript">
+    Bokeh.set_log_level("info");
+  </script>
+  <script src="mapdata.js"></script>
+    <script src="worldmap.js"></script>
+</head>
+<body>
+
+    <div id="myModal" class="modal">
+      <span class="close">&times;</span>
+      <div id="map" class="inner"></div>
+    </div>
+
+	<div class="sidenav">
+		<div class "sidenavtext">
+  			<a href="#about">About</a>
+  		</div>
+  		<div class "sidenavtext">
+  			<a href="#services">Conflicts</a>
+  		</div>
+  		<div class "sidenavtext">
+  			<a id="myBtn">World Map</a>
+      </div>
+  </div>
+
+	<header>
+		<h1 class="alignleft" style="margin-top: 10px">World Food Prices</h1>
+	</header>
+
+	<main>
+  </main>
+
+	<footer>
+		<p class="alignleft">DAV10</p>
+  		<p class="alignright">Data Analysis and Visualisation</p>
+	</footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
