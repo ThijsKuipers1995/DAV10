@@ -50,6 +50,37 @@ function showConflicts() {
 	conflicts.style.display = "block";
 	graphs.style.display = "none";
 }
+  var menu = document.getElementById('menu');
+  var tables = document.getElementById('tables');
+
+function showMenu() {
+  menu.style.display= "block";
+  tables.style.display= "none";
+  var Afghanistan = document.getElementById('Afghanistan')
+  var Iran = document.getElementById('Iran')
+  var Iraq = document.getElementById('Iraq')
+  var Yemen = document.getElementById('Yemen')
+  var Palestine = document.getElementById('Palestine')
+  var Pakistan = document.getElementById('Pakistan')
+  var Syria = document.getElementById('Syria')
+  var Lebanon = document.getElementById('Lebanon')
+  Afghanistan.style.display="none";
+  Iran.style.display="none";
+  Iraq.style.display="none";
+  Yemen.style.display="none";
+  Palestine.style.display="none";
+  Pakistan.style.display="none";
+  Syria.style.display="none";
+  Lebanon.style.display="none";
+  
+}
+
+function hideBox(country) {
+  var country = document.getElementById(country);
+  menu.style.display= "none";
+  tables.style.display= "block";
+  country.style.display= "block";
+}
 
 function showGraphs(country) {
 	modal.style.display = "none";

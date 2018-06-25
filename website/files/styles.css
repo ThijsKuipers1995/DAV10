@@ -52,6 +52,14 @@ h1 {
 a {
     font-family: Tahoma, Geneva, sans-serif;
 }
+.box {
+    /*float: left;
+    width: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: 2px solid blue;*/
+}
 .alignleft {
 	float: left;
 }
@@ -90,7 +98,9 @@ a {
     text-decoration: none;
     cursor: pointer;
 }
-/*test*/
+.menu {
+
+}
 
 
 .datagrid table { 
