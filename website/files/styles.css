@@ -1,10 +1,12 @@
 body {
-	background-color: white;
-	margin: 0;
+    background-color: white;
+    margin: 0;
 }
+
 .sidenav {
     height: 100%;
     width: 100px;
+    overflow: scroll;
     position: fixed;
     text-align: center;
     background-color: navy;
@@ -23,39 +25,46 @@ body {
 
 .sidenav a:hover {
     background-color: white;
-    color: black;
+    color: orange;
 }
+
 header {
-	border-bottom: 3px solid grey;
-	margin-left: 120px;
-	margin-right: 20px;
-	width: calc(100% - 140px);
-	height:60px;
+    border-bottom: 3px solid grey;
+    margin-left: 120px;
+    margin-right: 20px;
+    width: calc(100% - 140px);
+    height: 60px;
 }
 
 main {
     margin-left: 120px;
+    overflow: scroll;
 }
+
 footer {
-	border-top: 3px solid grey;
-	margin-left: 120px;
-	margin-right: 20px;
-   	position:sticky;
-   	bottom:0;
-   	width: calc(100% - 140px);
-   	height:60px;   /* Height of the footer */
+    border-top: 3px solid grey;
+    margin-left: 120px;
+    margin-right: 20px;
+    position: static;
+    bottom: 0;
+    width: calc(100% - 140px);
+    height: 60px;
 }
+
 img {
     max-width: 100%;
     max-height: 100%;
 }
+
 h1 {
     margin: 0;
     font-family: Tahoma, Geneva, sans-serif;
 }
+
 a {
     font-family: Tahoma, Geneva, sans-serif;
 }
+
 .menu {
     height: 50%;
     overflow: scroll;
@@ -64,6 +73,7 @@ a {
 a {
     font-family: Tahoma, Geneva, sans-serif;
 }
+
 .box {
     text-align: center;
     display: inline-block;
@@ -72,30 +82,25 @@ a {
     margin: 20px;
     background-color: white;
 }
+
 .alignleft {
-	float: left;
-}
-.alignright {
-	float: right;
+    float: left;
 }
 
-/* The Modal (background) */
+.alignright {
+    float: right;
+}
+
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */;
-    margin-left: 100px;
+    margin-left: 0px;
     width: calc(100% - 100px);
-    height: 100%; /* Full height */
-    background-color: white; /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    overflow: scroll;
+    height: 100%;
 }
+
 .inner {
-  margin: 0 auto;
-  margin-top: 100px;
+    margin: 0 auto;
 }
-/* The Close Button */
+
 .close {
     color: white;
     float: right;
@@ -111,21 +116,50 @@ a {
     cursor: pointer;
 }
 
+.datagrid table {
+    border-collapse: collapse;
+    text-align: left;
+    width: 100%;
+}
 
-
-.datagrid table { 
-    border-collapse: collapse; 
-    text-align: left; 
-    width: 100%; 
-} 
 .datagrid {
     font: normal 12px/150% Geneva, Arial, Helvetica, sans-serif;
-    background: #fff; 
-    overflow: hidden; 
+    background: #fff;
+    overflow: hidden;
 }
-.datagrid table td, .datagrid table th { 
-    padding: 10px 10px; 
-    width: 5%;
-}.datagrid table thead th {
-    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, navy), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 15px; font-weight: bold; border-left: 1px solid #0070A8; } .datagrid table thead th:first-child { border: none; }.datagrid table tbody td { color: #00557F; font-size: 13px;border-bottom: 1px solid #E1EEF4;font-weight: normal; }.datagrid table tbody td:first-child { border-left: none; }.datagrid table tbody tr:last-child td { border-bottom: none; }
 
+.datagrid table td,
+.datagrid table th {
+    padding: 10px 10px;
+    width: 5%;
+}
+
+.datagrid table thead th {
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, navy), color-stop(1, #00557F));
+    background: -moz-linear-gradient( center top, #006699 5%, #00557F 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');
+    background-color: #006699;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: bold;
+    border-left: 1px solid #0070A8;
+}
+
+.datagrid table thead th:first-child {
+    border: none;
+}
+
+.datagrid table tbody td {
+    color: #00557F;
+    font-size: 13px;
+    border-bottom: 1px solid #E1EEF4;
+    font-weight: normal;
+}
+
+.datagrid table tbody td:first-child {
+    border-left: none;
+}
+
+.datagrid table tbody tr:last-child td {
+    border-bottom: none;
+}
