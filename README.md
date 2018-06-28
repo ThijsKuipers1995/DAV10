@@ -11,6 +11,8 @@ Alle grafieken staan in het mapje 'docs'
 
 Alle data staat in het mapje 'data'
 
-Report  en Progress Book in main repository.
+Report en Progress Book in main repository.
+
+Het ProgessBook bevat het logboek. 
 
 :)
