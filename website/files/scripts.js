@@ -66,8 +66,3 @@ function hideBox(country) {
     country.style.display = "block";
 }
 
-function showGraphs(country) {
-    alert('Graphs for ' + country + ' will now be displayed.')
-    modal.style.display = "none";
-    
-}
