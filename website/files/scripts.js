@@ -1,33 +1,28 @@
 var modal = document.getElementById('myModal');
 var btn = document.getElementById("myBtn");
-var span = document.getElementsByClassName("close")[0];
 
-var conflictbox = document.getElementById('GraphsByProduct');
-var conflictbox2 = document.getElementById('GraphsByConflict');
+var graphsbyquestion = document.getElementById('GraphsByQuestion');
 
 btn.onclick = function () {
     hideAll();
     modal.style.display = "block";
     graphs.style.display= "block";
-    conflictbox.style.display = "block";
-    conflictbox2.style.display = "block";
 }
 
-var info = document.getElementById("Info");
+
 var graphs = document.getElementById("Graphs");
 var conflicts = document.getElementById("Conflict");
-var analysis = document.getElementById("Analysis");
+
 
 function hideAll() {
     modal.style.display = "none";
-    info.style.display = "none";
     conflicts.style.display = "none";
     graphs.style.display = "none";
-    analysis.style.display = "none";
+    graphsbyquestion.style.display = "none";
 }
-function showInfo() {
+function showGraphsByQuestion() {
     hideAll();
-    info.style.display = "block";
+    graphsbyquestion.style.display = "block";
 }
 
 function showConflicts() {
@@ -73,8 +68,6 @@ function hideBox(country) {
 
 function showGraphs(country) {
     alert('Graphs for ' + country + ' will now be displayed.')
-    conflictbox.style.display = "none";
-    conflictbox2.style.display = "none";
     modal.style.display = "none";
     
 }
