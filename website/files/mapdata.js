@@ -59,7 +59,7 @@ var simplemaps_worldmap_mapdata={
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
-    popup_orientation: "below",
+    popup: "above",
     
     //Advanced settings
     div: "map",

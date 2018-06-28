@@ -5,6 +5,8 @@ body {
 
 .sidenav {
     height: 100%;
+    min-height: 400px;
+    overflow: scroll;
     width: 100px;
     overflow: scroll;
     position: fixed;
@@ -15,8 +17,9 @@ body {
 }
 
 .sidenav a {
-    padding-bottom: 30px;
+    height: calc(25% - 60px);
     padding-top: 30px;
+    padding-bottom: 30px;
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -61,17 +64,27 @@ h1 {
     font-family: Tahoma, Geneva, sans-serif;
 }
 
+h2 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: navy;
+}
+
+h2:hover {
+    color: orange;
+
+}
 a {
     font-family: Tahoma, Geneva, sans-serif;
 }
+
+h3 {
+    border-bottom: 1px solid grey;
+}
+
 
 .menu {
     height: 50%;
     overflow: scroll;
-}
-
-a {
-    font-family: Tahoma, Geneva, sans-serif;
 }
 
 .box {
@@ -148,7 +161,9 @@ a {
 .datagrid table thead th:first-child {
     border: none;
 }
-
+.bk-root {
+    display: inline-block;
+}
 .datagrid table tbody td {
     color: #00557F;
     font-size: 13px;

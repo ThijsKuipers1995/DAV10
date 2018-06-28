@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-us">
+   <head>
+      <meta charset="utf-8">
+      <title>Data Analysis and Visualisation</title>
+      <link rel="stylesheet" href="files/styles.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <script src="files/mapdata.js"></script>
+      <script src="files/worldmap.js"></script>
+      <link rel="stylesheet" href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.css" type="text/css" />
+      <script type="text/javascript" src="https://cdn.pydata.org/bokeh/release/bokeh-0.12.16.min.js"></script>
+      <script type="text/javascript">
+         Bokeh.set_log_level("info");
+      </script>
+   </head>
+   <body>
+      <div class="sidenav">
+         <a onclick="showInfo()" href="index.html"><i class="fas fa-info"></i><br>About</a>
+         <a onclick="showConflicts();showMenu()" href="index.html"><i class="fas fa-fighter-jet"></i><br>Conflicts</a>
+         <a id="myBtn"><i class="fas fa-chart-bar" href="index.html"></i><br>Graphs</a>
+         <a onclick="showAnalysis()" href="index.html"><i class="fas fa-chalkboard-teacher"></i><br>Analysis</a>
+      </div>
+      <header>
+         <h1 class="alignleft" style="margin-top: 10px">World Food Prices</h1>
+      </header>
+      <main>
+         <div id="graphicsmain" style="width: 1200px;">
+         <h1 style="font-size: 25px; color: navy;">Zijn er voedselprijzen die correleren met andere data?</h1>
+         
+         </div>
+      </main>
+   </body>
+   <footer>
+      <p class="alignleft">DAV10</p>
+      <p class="alignright">Data Analysis and Visualisation</p>
+   </footer>
+   <script src="files/scripts.js"></script>
+</html>

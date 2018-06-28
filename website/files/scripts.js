@@ -3,7 +3,7 @@ var btn = document.getElementById("myBtn");
 var span = document.getElementsByClassName("close")[0];
 
 var conflictbox = document.getElementById('GraphsByProduct');
-var conflictbox2 = document.getElementById('GraphsBy');
+var conflictbox2 = document.getElementById('GraphsByConflict');
 
 btn.onclick = function () {
     hideAll();
@@ -72,48 +72,9 @@ function hideBox(country) {
 }
 
 function showGraphs(country) {
+    alert('Graphs for ' + country + ' will now be displayed.')
     conflictbox.style.display = "none";
     conflictbox2.style.display = "none";
     modal.style.display = "none";
-    alert('Graphs for ' + country + ' will now be displayed.')
+    
 }
-
-/* Bokeh function */
-(function () {
-    var fn = function () {
-        Bokeh.safely(function () {
-            (function (root) {
-                function embed_document(root) {
-
-                    var docs_json = document.getElementById('b174875b-d62b-4bd6-bdb0-0c0446dc1c00').textContent;
-                    var render_items = [{
-                        "docid": "64032834-179b-4b25-b017-4a7b0760f900",
-                        "elementid": "a407a123-f539-4190-ad1c-3f6e4e4b206e",
-                        "modelid": "d6af7d9b-0c25-4938-9ca3-ce292aeda121"
-                    }];
-                    root.Bokeh.embed.embed_items(docs_json, render_items);
-
-                }
-                if (root.Bokeh !== undefined) {
-                    embed_document(root);
-                }
-                else {
-                    var attempts = 0;
-                    var timer = setInterval(function (root) {
-                        if (root.Bokeh !== undefined) {
-                            embed_document(root);
-                            clearInterval(timer);
-                        }
-                        attempts++;
-                        if (attempts > 100) {
-                            console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing")
-                            clearInterval(timer);
-                        }
-                    }, 10, root)
-                }
-            })(window);
-        });
-    };
-    if (document.readyState != "loading") fn();
-    else document.addEventListener("DOMContentLoaded", fn);
-})();
